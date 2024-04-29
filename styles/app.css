@@ -1,0 +1,144 @@
+/* App Fonts */
+@font-face {
+    font-family: "Figtree";
+    src: url("../fonts/Figtree-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Figtree Medium";
+    src: url("../fonts/Figtree-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Figtree ExtraBold";
+    src: url("../fonts/Figtree-ExtraBold.ttf") format("truetype");
+}
+
+/* Basic Preparation */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  /*  10px  */
+}
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+/* Body and Container */
+body {
+    font-family: "Figtree";
+    font-size: 1.6rem;
+    background-color: #F4D04E;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Start Project */
+.main {
+    padding: 2.4rem;
+}
+.wrapper {
+    background-color: #fff;
+    max-width: 38.4rem;
+    border-radius: 2rem;
+    border: 1px solid #111;
+    box-shadow: 0.8rem 0.8rem 0 #000;
+    padding: 2.4rem;
+    transition: all 150ms ease-in;
+}
+/* Banner */
+.banner {
+    max-width: 33.6rem;
+    height: 20rem;
+    margin: 0 auto 2.4rem auto;
+}
+.banner__image {
+    width: 100%;
+}
+
+/* Description */
+.description {
+
+}
+.description__catergory {
+    background-color: #F4D04E;
+    padding: 0.6rem 1.4rem;
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+    font-family: 'Figtree ExtraBold';
+}
+.description__date {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+.description__title {
+    font-size: 2.4rem;
+    font-family: 'Figtree ExtraBold';
+    cursor: pointer;
+    transition: all 150ms ease-in;
+}
+.description__title:hover {
+    color: #F4D04E;
+}
+.description__paragraph {
+    color: #7F7F7F;
+    font-family: "Figtree Medium";
+    line-height: 1.5;
+}
+
+/* User */
+.user {
+    margin: 2.4rem 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.user__image {
+    width: 3.2rem;
+}
+.user__name {
+    font-size: 1.4rem;
+    font-family: 'Figtree ExtraBold';
+}
+
+/* Responsive */
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+@media only screen and (max-width : 385px) {
+    .wrapper {
+        padding: 2.4rem;
+    }
+    .banner {
+        margin: 0;
+    }
+    .description__catergory {
+        font-size: 1.2rem;
+    }
+    .description__title {
+        font-size: 2rem;
+    }
+    .description__paragraph {
+        font-size: 1.4rem;
+    }
+}
